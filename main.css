@@ -13,8 +13,8 @@ html {
   border-color: rgb(99, 105, 99);
   padding: 10px;
   border-width: 5px 5px 5px;
-  margin: 20px;
-  font-size: 20px;
+  margin: 15px;
+  font-size: 30px;
 }
 
 .midSec {
@@ -22,8 +22,46 @@ html {
   color: whitesmoke;
   border-style: solid;
   border-color: rgb(99, 105, 99);
-  padding: 2vmax;
+  padding: 20px;
   border-width: 5px 5px 5px;
   border-radius: 5px;
   margin: 3em 2em 3em;
+}
+
+.project_container_flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-color: white;
+  border-style: solid;
+  border-width: 2px;
+}
+.item_proj_cont_grid {
+  display: grid;
+  border-color: red;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.gird-1 {
+  border-color: rgb(106, 245, 50);
+  border-style: solid;
+  border-width: 2px;
+}
+.gird-2 {
+  border-color: rgb(106, 245, 50);
+  border-style: solid;
+  border-width: 2px;
+}
+.gird-3 {
+  border-color: rgb(106, 245, 50);
+  border-style: solid;
+  border-width: 2px;
+}
+.gird-4 {
+  border-color: rgb(106, 245, 50);
+  border-style: solid;
+  border-width: 2px;
 }
