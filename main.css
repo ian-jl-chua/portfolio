@@ -66,3 +66,12 @@ html {
   border-style: solid;
   border-width: 2px;
 }
+
+a:not(.active) {
+  color: whitesmoke;
+}
+
+/* a.active {
+  background-color: rgb(245, 245, 245, 0.8);
+  color: rgb(22, 56, 22);
+} */
