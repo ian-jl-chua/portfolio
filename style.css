@@ -13,6 +13,7 @@
 
 :root {
   --bg-color: #010000;
+  --no-bg-color:var(--border-color);
   --second-bg-color: linear-gradient(rgba(63, 1, 1, 0), rgba(131, 38, 41, 1));
   --third-bg-color: linear-gradient(rgba(131, 38, 41, 1), rgba(63, 1, 1, 0));
   --text-color: whitesmoke;
