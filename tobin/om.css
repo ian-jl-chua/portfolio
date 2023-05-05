@@ -1,4 +1,4 @@
-html {
+/* html {
   background: url(https://ian-jl-chua.github.io/assets/foggy-mountains-nature-fog.jpg)
     no-repeat center fixed;
   background-size: cover;
@@ -15,8 +15,8 @@ html {
   border-width: 5px 5px 5px;
   margin: 15px;
   font-size: 30px;
-}
-
+} */
+/* 
 .midSec {
   background-color: rgb(0, 0, 0, 0.7);
   color: whitesmoke;
@@ -26,6 +26,30 @@ html {
   border-width: 5px 5px 5px;
   border-radius: 5px;
   margin: 3em 2em 3em;
+  overflow: auto;
+}
+
+.project {
+  display: block;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.item_proj_cont_flex_odd {
+  display: flex;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  align-content: center;
+} */
+/* .grid_1_odd {
+  border-style: solid;
+  border-width: 2px;
+} */
+
+/* .git_logo {
+  max-width: 40px;
+  align-content: center;
+  border-radius: 15px;
 }
 
 .project_container_flex {
@@ -34,42 +58,43 @@ html {
   justify-content: center;
   gap: 5rem;
 }
-.item_proj_cont_grid {
+
+.item_proj_cont_grid_even {
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(2, 1fr);
 }
+ */
 
-.img_in_grid {
-  /* needs editing */
+ /* needs editing */
+/* .img_in_grid {
   max-width: 400px;
 }
 
-.gird-1 {
-  background-color: red;
-  border-color: rgb(106, 245, 50);
+.grid-1 {
   border-style: solid;
   border-width: 2px;
 }
-.gird-2 {
-  border-color: rgb(106, 245, 50);
-  border-style: solid;
-  border-width: 2px;
+.grid-1 > img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
 }
-.gird-3 {
-  border-color: rgb(106, 245, 50);
+
+.grid-2 {
   border-style: solid;
   border-width: 2px;
-}
-.gird-4 {
-  border-color: rgb(106, 245, 50);
-  border-style: solid;
-  border-width: 2px;
+} */
+/* 
+.grid-2 > img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
 }
 
 a:not(.active) {
   color: whitesmoke;
-}
+} */
 
 /* a.active {
   background-color: rgb(245, 245, 245, 0.8);
