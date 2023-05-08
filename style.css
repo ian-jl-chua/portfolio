@@ -13,7 +13,6 @@
 
 :root {
   --bg-color: #010000;
-  --no-bg-color: var(--border-color);
   --second-bg-color: linear-gradient(rgba(63, 1, 1, 0), rgba(131, 38, 41, 1));
   --third-bg-color: linear-gradient(rgba(131, 38, 41, 1), rgba(63, 1, 1, 0));
   --text-color: whitesmoke;
@@ -305,7 +304,7 @@ span {
 
 .skills {
   background: var(--third-bg-color);
-  padding-block: 5rem 2rem;
+  padding-block: 1rem 1rem;
 }
 
 .container {
@@ -328,9 +327,10 @@ span {
   font-size: 3rem;
   font-weight: 400;
 }
+
 .skills-text p {
-  font-size: 1.6rem;
-  margin: 2rem 0 3rem;
+  font-size: 1.8rem;
+  margin: 1rem 0 0.5rem;
 }
 
 .skills-content,
@@ -353,4 +353,14 @@ span {
 .skills-group li {
   font-size: 2rem;
   font-weight: 400;
+}
+
+.projects {
+  background: var(--third-bg-color);
+  padding-block: 1rem 1rem;
+}
+
+.projects-img{
+  max-width: 100%;
+  height: auto;
 }
