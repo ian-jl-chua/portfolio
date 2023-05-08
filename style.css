@@ -16,7 +16,7 @@
   --second-bg-color: linear-gradient(rgba(63, 1, 1, 0), rgba(131, 38, 41, 1));
   --third-bg-color: linear-gradient(rgba(131, 38, 41, 1), rgba(63, 1, 1, 0));
   --text-color: whitesmoke;
-  --main-color: #832629;
+  --main-color: #b22a2e;
   --border-color: rgb(57, 1, 1);
 }
 
@@ -41,6 +41,23 @@ body {
   justify-content: space-between;
   align-items: center;
   z-index: 100;
+}
+
+.blur-header {
+  background-color: transparent;
+}
+
+.blur-header::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(0, 0%, 10%, 0.3);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .logo {
@@ -99,7 +116,6 @@ section {
 .home-content .text-animate h3 {
   font-size: 3rem;
   font-weight: 400;
-  color: transparent;
   -webkit-text-stroke: 1px var(--main-color);
 }
 
@@ -262,4 +278,89 @@ section {
 
 span {
   color: var(--main-color);
+}
+
+.about-content {
+  text-align: center;
+}
+
+.about-content h3 {
+  font-size: 2.6rem;
+}
+
+.about-content p {
+  font-size: 1.6rem;
+  margin: 2rem 0 3rem;
+}
+
+.button-box.btns {
+  display: inline-block;
+  width: 15rem;
+}
+
+.button-box.btns a::before {
+  background: var(--bg-color);
+}
+
+.skills {
+  background: var(--third-bg-color);
+  padding-block: 1rem 1rem;
+}
+
+.container {
+  max-width: 1120px;
+  margin-inline: 1.5rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.skills-container {
+  padding-bottom: 2rem;
+  row-gap: 4rem;
+}
+
+.skills-content ul {
+  text-align: center;
+}
+
+.skills-text h2 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.skills-text p {
+  font-size: 1.8rem;
+  margin: 1rem 0 0.5rem;
+}
+
+.skills-content,
+.skills-group {
+  display: grid;
+}
+
+.skills-content {
+  grid-template-columns: repeat(2, max-content);
+  column-gap: 4rem;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.skills-group {
+  row-gap: 1rem;
+  list-style: circle;
+}
+
+.skills-group li {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.projects {
+  background: var(--third-bg-color);
+  padding-block: 1rem 1rem;
+}
+
+.projects-img{
+  max-width: 100%;
+  height: auto;
 }

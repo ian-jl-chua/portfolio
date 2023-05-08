@@ -15,8 +15,8 @@
   border-width: 5px 5px 5px;
   margin: 15px;
   font-size: 30px;
-} */
-/* 
+} 
+
 .midSec {
   background-color: rgb(0, 0, 0, 0.7);
   color: whitesmoke;
@@ -40,13 +40,14 @@
   gap: 1rem;
   grid-template-columns: repeat(2, 1fr);
   align-content: center;
-} */
-/* .grid_1_odd {
+} 
+
+.grid_1_odd {
   border-style: solid;
   border-width: 2px;
-} */
+}
 
-/* .git_logo {
+.git_logo {
   max-width: 40px;
   align-content: center;
   border-radius: 15px;
@@ -84,8 +85,8 @@
 .grid-2 {
   border-style: solid;
   border-width: 2px;
-} */
-/* 
+}
+
 .grid-2 > img {
   object-fit: cover;
   width: 100%;
@@ -94,9 +95,9 @@
 
 a:not(.active) {
   color: whitesmoke;
-} */
+}
 
-/* a.active {
+ a.active {
   background-color: rgb(245, 245, 245, 0.8);
   color: rgb(22, 56, 22);
 } */
