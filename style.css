@@ -376,12 +376,7 @@ span {
 /* to be determined */
 /* .projects-card h2{
   font-size:3rem;
-}
-
-.projects-card span{
-  font-size: 2rem;
-  color: var(--text-color);
-} */
+}*/
 
 .projects-img {
   max-width: 100%;
@@ -412,5 +407,22 @@ span {
 .projects-subtitle,
 .projects-button{
   color: var(--text-color);
+}
+
+.projects-subtitle{
+  display: block;
+  margin-bottom: 2rem;
+  font-size: medium;
+}
+
+.projects-title{
+  font-size: x-large;
+  margin-bottom: 4rem;
+}
+
+.projects-button{
+  display: flex;
+  align-items: center;
+  column-gap: .5rem;
   font-size: small;
 }
