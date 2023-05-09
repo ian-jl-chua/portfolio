@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   </head>
   <body>
     <!-- Header -->
@@ -94,6 +95,8 @@
         </div>
       </div>
     </section>
+
+    <!-- Projects -->
     <section class="projects" id="projects">
       <h2 class="heading">Recent <span>Projects</span></h2>
       <div class="projects-container container">
@@ -130,5 +133,48 @@
         </article>
       </div>
     </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me</span></h2>
+      <div class="contact-container">
+        <form action="" class="contact-form" id="contact-form">
+          <div class="contact-group">
+            <input
+              type="text"
+              name="users-name"
+              required
+              placeholder="Your name"
+              class="contact-input"
+            />
+            <input
+              type="text"
+              name="users-email"
+              required
+              placeholder="Your email"
+              class="contact-input"
+            />
+          </div>
+          <textarea
+            name="users-message"
+            required
+            id="users-message"
+            placeholder="Enter your message"
+            class="contact-input"
+          ></textarea>
+          <p class="contact-message" id="contact-message"></p>
+          <button type="submit" class="contact-button">Send message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-text"> <p>Copyright &copy; Ian Chua | All rights reserved.</p></div>
+      <div class="footer-iconTop">
+        <a href="#"><i class="bx bx-up-arrow"></i></a>
+      </div>
+    </footer>
+    
   </body>
 </html>

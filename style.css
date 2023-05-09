@@ -267,7 +267,7 @@ section {
 }
 
 .heading {
-  font-size: 5rem;
+  font-size: 4rem;
   margin-bottom: 3rem;
   text-align: center;
 }
@@ -352,6 +352,10 @@ span {
 }
 
 .projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   background-image: var(--third-bg-color);
   padding-block: 1rem 1rem;
 }
@@ -431,4 +435,95 @@ span {
   left: 0;
 }
 
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-block: 5rem 2rem;
+  background-image: var(--bg-color);
+}
 
+.contact-container {
+  display: grid;
+  gap: 1.5rem;
+  width: 90%;
+  max-width: 1200px;
+  margin-inline: 1.5rem;
+  padding-top: 2rem;
+}
+
+.contact-form,
+.contact-group {
+  display: grid;
+  row-gap: 1rem;
+}
+
+.contact-form {
+  position: relative;
+}
+
+.contact-input {
+  padding: 1rem 1.25rem;
+  border-radius: 0.5rem;
+  background-color: var(--border-color);
+  color: var(--text-color);
+}
+
+.contact-input ::placeholder {
+  color: var(--text-color);
+}
+
+.contact-form textarea{
+  height: 11rem;
+  resize: none;
+  margin-bottom: 2rem;
+}
+.contact-button {
+  justify-self: center;
+  cursor: pointer;
+  width: 15rem;
+  padding: 10px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border: 0.2rem solid var(--border-color);
+  border-radius: 1rem;
+  background:var(--main-color);
+  color: var(--text-color);
+}
+
+.contact-message{
+  position: absolute;
+  left: 0;
+  bottom: 4.5rem ;
+  font-size: small;
+}
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 9%;
+  background-image:var(--border-color) ;
+}
+
+.footer-text p {
+font-size: 1rem;
+}
+
+.footer-iconTop a {
+position: relative;
+display: inline-flex;
+justify-content: center;
+align-items: center;
+padding: .8rem;
+background:var(--main-color);
+border: .2rem solid var(--main-color);
+border-radius: .6rem;
+}
+
+.footer-iconTop a i {
+  font-size: 2.4rem;
+  color: var(--bg-color);
+}
