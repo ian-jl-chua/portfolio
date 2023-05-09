@@ -17,6 +17,7 @@
   --third-bg-color: linear-gradient(rgba(131, 38, 41, 1), rgba(63, 1, 1, 0));
   --text-color: whitesmoke;
   --main-color: #b22a2e;
+  --sec-main-color: rgb(223, 85, 85);
   --border-color: rgb(57, 1, 1);
 }
 
@@ -153,7 +154,6 @@ section {
   width: 15rem;
   height: 100%;
   padding: 10px;
-  background: var(--main-color);
   border: 0.2rem solid var(--border-color);
   border-radius: 1rem;
   font-size: 1.5rem;
@@ -162,10 +162,6 @@ section {
   color: var(--text-color);
   z-index: 1;
   overflow: hidden;
-}
-
-.button-box .btn:hover {
-  color: var(--bg-color);
 }
 
 .button-box .btn::before {
@@ -360,6 +356,10 @@ span {
   padding-block: 1rem 1rem;
 }
 
+.projects h2 span {
+  color: var(--sec-main-color);
+}
+
 .projects-container {
   row-gap: 2rem;
   padding-bottom: 2rem;
@@ -373,11 +373,6 @@ span {
   overflow: hidden;
 }
 
-/* to be determined */
-/* .projects-card h2{
-  font-size:3rem;
-}*/
-
 .projects-img {
   max-width: 100%;
   height: 100%;
@@ -385,44 +380,55 @@ span {
 
 .projects-modal {
   position: absolute;
-  left: 0;
+  left: -100%;
   bottom: 0;
   width: 100%;
   height: 100%;
   background: linear-gradient(
     180deg,
     hsla(0, 0%, 0%, 0) 0%,
-    hsla(0, 60%, 40%, 0.8) 120%
+    hsla(0, 70%, 15%, 0.9) 100%
   );
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px) ;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition: bottom .4s;
-} 
+  transition: 1.25s;
+}
 
 .projects-subtitle,
-.projects-button{
+.projects-button {
   color: var(--text-color);
 }
 
-.projects-subtitle{
+.projects-subtitle {
   display: block;
   margin-bottom: 2rem;
-  font-size: medium;
+  font-size: large;
 }
 
-.projects-title{
-  font-size: x-large;
+.projects-title {
+  font-size: xx-large;
   margin-bottom: 4rem;
 }
 
-.projects-button{
+.projects-button {
   display: flex;
   align-items: center;
-  column-gap: .5rem;
-  font-size: small;
+  column-gap: 0.5rem;
+  font-weight: 500;
+  padding-bottom: 1.2rem;
 }
+
+.projects-button i {
+  font-size: 2rem;
+}
+
+.projects-card:hover .projects-modal {
+  left: 0;
+}
+
+
