@@ -276,6 +276,13 @@ span {
   color: var(--main-color);
 }
 
+.container {
+  max-width: 1120px;
+  margin-inline: 1.5rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
 .about-content {
   text-align: center;
 }
@@ -301,13 +308,6 @@ span {
 .skills {
   background: var(--third-bg-color);
   padding-block: 1rem 1rem;
-}
-
-.container {
-  max-width: 1120px;
-  margin-inline: 1.5rem;
-  display: grid;
-  gap: 1.5rem;
 }
 
 .skills-container {
