@@ -22,7 +22,7 @@
         <div class="nav--menu" id="nav-menu">
           <ul class="nav--list">
             <li class="nav--item">
-              <a href="#home" class="nav--link">Home</a>
+              <a href="#home" class="nav--link active-link">Home</a>
             </li>
             <li class="nav--item">
               <a href="#about" class="nav--link">About</a>
@@ -164,25 +164,28 @@
             </article>
             <div class="project--inner">
               <div class="project--inner-item">
+                <h3><u>SIMS Final Project</u></h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nesciunt laboriosam in impedit ducimus corporis consectetur
-                  tempora similique, unde enim excepturi ipsum repellat dicta.
-                  Doloremque exercitationem hic eos mollitia suscipit ipsam?
+                  This is the final group project at Dev Academy. We have
+                  decided to create a Gartic phone like game that lets a player
+                  put in a prompt and another player draw the prompt that was
+                  given.
                 </p>
               </div>
               <div class="project--inner-item">
-                <h3>Learnings:</h3>
+                <h3><u>Learnings</u></h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                  quasi facere iusto aperiam deleniti consequatur rem voluptate
-                  nemo, natus ipsum sequi autem, cupiditate sed labore error
-                  ipsam cum? Impedit, nemo.
+                  The importance of planning group projects and breaking task
+                  down to small parts, this helps with the distribution of
+                  workload. We as a group would also have liked to implement
+                  websockets and considering using Firebase as our database in
+                  future projects.
                 </p>
               </div>
               <div class="project--inner-item">
-                <h3>Tech used:</h3>
+                <h3><u>Tech used</u></h3>
                 <ul>
+                  <li>TypeScript</li>
                   <li>React</li>
                   <li>Redux</li>
                   <li>SQLite3</li>
@@ -190,8 +193,8 @@
                 </ul>
               </div>
             </div>
-
           </div>
+
           <div class="projects--card-container">
             <article class="projects--card">
               <img
@@ -211,29 +214,32 @@
             </article>
             <div class="project--inner">
               <div class="project--inner-item">
+                <h3><u>Todo-Fullstack</u></h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nesciunt laboriosam in impedit ducimus corporis consectetur
-                  tempora similique, unde enim excepturi ipsum repellat dicta.
-                  Doloremque exercitationem hic eos mollitia suscipit ipsam?
+                  This is a solo challenge at Dev Academy where we have to build
+                  Todo site using the Full Stack knowledge we have at the
+                  course.
                 </p>
               </div>
               <div class="project--inner-item">
-                <h3>Learnings:</h3>
+                <h3><u>Learnings</u></h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                  quasi facere iusto aperiam deleniti consequatur rem voluptate
-                  nemo, natus ipsum sequi autem, cupiditate sed labore error
-                  ipsam cum? Impedit, nemo.
+                  It is quite challenging to build something from scratch, but I
+                  now know the 4 functions that are necessary in programming,
+                  CRUD. I would do one thing differently, which would be to plan
+                  out my backend database table and be aware of of how
+                  information is passed to my table. For example using
+                  (task_details as taskDetails)
                 </p>
               </div>
               <div class="project--inner-item">
-                <h3>Tech used:</h3>
+                <h3><u>Tech used</u></h3>
                 <ul>
+                  <li>TypeScript and JavaScript</li>
                   <li>React</li>
                   <li>Redux</li>
                   <li>SQLite3</li>
-                  <li>Tailwind</li>
+                  <li>SCSS</li>
                 </ul>
               </div>
             </div>
@@ -242,12 +248,71 @@
       </section>
 
       <!-- Contact -->
-      <section class="contact section" id="contact"></section>
+      <section class="contact section" id="contact">
+        <h3 class="section--subtitle">Getting in touch</h3>
+        <h2 class="section--title">Contact <span>Me</span></h2>
+        <div class="contact--container container grid">
+          <form action="" class="contact--form" id="contact-form">
+            <div class="contact--group">
+              <input
+                type="text"
+                name="persons-name"
+                required
+                placeholder="Your name"
+                class="contact--input"
+              />
+              <input
+                type="email"
+                name="persons-email"
+                required
+                placeholder="Your email"
+                class="contact--input"
+              />
+            </div>
+            <textarea
+              name="persons-message"
+              required
+              placeholder="Your message"
+              class="contact--input"
+            ></textarea>
+            <p class="contact--message" id="contact-message"></p>
+            <button type="submit" class="button contact--button">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="footer--container container grid">
+        <div>
+          <h1 class="footer--title">Ian <span>Chua</span></h1>
+          <h2 class="footer--position">Full Stack Developer</h2>
+        </div>
+        <div class="footer--sci">
+          <a
+            href="https://github.com/ian-jl-chua"
+            target="_blank"
+            class="footer--sci-link"
+            ><i class="ri-github-fill"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/ian-jl-chua/"
+            target="_blank"
+            class="footer--sci-link"
+            ><i class="ri-linkedin-box-fill"></i
+          ></a>
+        </div>
+        <span class="footer--copy">
+          &#169; Copyright Ian Chua | All Rights Reserved
+        </span>
+      </div>
+    </footer>
 
+    <!-- To top -->
+    <a href="#" class="scrollup" id="scroll-up"><i class="ri-arrow-up-s-line"></i></a>
     <!-- Main JS -->
     <script src="script.js"></script>
   </body>
