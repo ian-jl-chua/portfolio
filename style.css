@@ -205,11 +205,11 @@ svg {
   }
 }
 
-@media (min-width: 768px) {
+/* @media screen and (min-width: 770px) {
   .projects--container {
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   }
-}
+} */
 
 .nav--list {
   display: flex;
@@ -435,6 +435,7 @@ svg {
 .skills--item::marker {
   color: var(--first-color);
 }
+
 /* Projects */
 .projects {
   background: var(--fourth-bg-color);
@@ -664,7 +665,60 @@ svg {
 
 /* Breakpoints */
 /* For small devices */
-
+@media screen and (max-width: 320px) {
+  .container {
+    margin-inline: 1rem;
+  }
+  .skills--content {
+    grid-template-columns: max-content;
+    row-gap: 1rem;
+  }
+}
 /* For medium devices */
+@media screen and (min-width: 576px) {
+  .home--container,
+  .about--container,
+  .skills--container,
+  .contact--container {
+    grid-template-columns: 360px;
+    justify-content: center;
+  }
+  /* to be amended */
+  .projects--container {
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  }
+  /* to be amended */
+}
 
+
+@media screen and (min-width: 768px) {
+  .nav--menu {
+    width: 60%;
+  }
+  .home--container,
+  .about--container,
+  .skills--container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+  .home--info,
+  .about--box,
+  .skills--box,
+  :is(.about--box, .skills--box) :is(.section--subtitle, .section--title) {
+    text-align: initial;
+  }
+  .home--sci{
+    justify-content: initial;
+  }
+
+  .about--box{
+    order: 1;
+  }
+  .projects--container{
+    grid-template-columns: repeat(2, 352px);
+  }
+  /* .projects--container {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  } */
+}
 /* For large devices */
