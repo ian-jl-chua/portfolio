@@ -194,7 +194,7 @@
               </div>
             </div>
           </div>
-          
+
           <div class="projects--card-container">
             <article class="projects--card">
               <img
@@ -217,18 +217,19 @@
                 <h3><u>Todo-Fullstack</u></h3>
                 <p>
                   This is a solo challenge at Dev Academy where we have to build
-                  Todo site using the Full Stack knowledge we have at the course.
+                  Todo site using the Full Stack knowledge we have at the
+                  course.
                 </p>
               </div>
               <div class="project--inner-item">
                 <h3><u>Learnings</u></h3>
                 <p>
-                  It is quite challenging to build something from scratch, but I now
-                  know the 4 functions that are necessary in programming, CRUD. I
-                  would do one thing differently, which would be to plan out my
-                  backend database table and be aware of of how information is
-                  passed to my table. For example using (task_details as
-                  taskDetails)
+                  It is quite challenging to build something from scratch, but I
+                  now know the 4 functions that are necessary in programming,
+                  CRUD. I would do one thing differently, which would be to plan
+                  out my backend database table and be aware of of how
+                  information is passed to my table. For example using
+                  (task_details as taskDetails)
                 </p>
               </div>
               <div class="project--inner-item">
@@ -247,11 +248,68 @@
       </section>
 
       <!-- Contact -->
-      <section class="contact section" id="contact"></section>
+      <section class="contact section" id="contact">
+        <h3 class="section--subtitle">Getting in touch</h3>
+        <h2 class="section--title">Contact <span>Me</span></h2>
+        <div class="contact--container container grid">
+          <form action="" class="contact--form" id="contact-form">
+            <div class="contact--group">
+              <input
+                type="text"
+                name="persons-name"
+                required
+                placeholder="Your name"
+                class="contact--input"
+              />
+              <input
+                type="email"
+                name="persons-email"
+                required
+                placeholder="Your email"
+                class="contact--input"
+              />
+            </div>
+            <textarea
+              name="persons-message"
+              required
+              placeholder="Your message"
+              class="contact--input"
+            ></textarea>
+            <p class="contact--message" id="contact-message"></p>
+            <button type="submit" class="button contact--button">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="footer--container container grid">
+        <div>
+          <h1 class="footer--title">Ian Chua</h1>
+          <h2 class="footer--position">Full Stack Developer</h2>
+        </div>
+        <div class="footer--sci">
+          <a
+            href="https://github.com/ian-jl-chua"
+            target="_blank"
+            class="footer--sci-link"
+            ><i class="ri-github-fill"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/ian-jl-chua/"
+            target="_blank"
+            class="footer--sci-link"
+            ><i class="ri-linkedin-box-fill"></i
+          ></a>
+        </div>
+        <span class="footer--copy">
+          &#169; Copyright Ian Chua | All Rights Reserved
+        </span>
+      </div>
+    </footer>
 
     <!-- Main JS -->
     <script src="script.js"></script>

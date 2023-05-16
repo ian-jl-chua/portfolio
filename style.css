@@ -22,6 +22,11 @@
   --bg-color: #010000;
   --second-bg-color: linear-gradient(rgba(63, 1, 1, 0), rgb(100, 28, 31, 1));
   --third-bg-color: linear-gradient(rgb(100, 28, 31, 1), rgba(63, 1, 1, 0));
+  --fourth-bg-color: linear-gradient(
+    rgba(63, 1, 1, 0),
+    rgb(100, 28, 31, 1),
+    rgba(63, 1, 1, 0)
+  );
   --container-color: hsl(0, 80%, 6%);
   --border-color: rgb(57, 1, 1);
 
@@ -428,7 +433,7 @@ svg {
 }
 /* Projects */
 .projects {
-  background-image: var(--container-color);
+  background: var(--fourth-bg-color);
 }
 
 .projects--container {
@@ -514,8 +519,50 @@ svg {
 .projects--card:hover .projects--modal {
   left: 0;
 }
-/* Contact */
 
+/* Contact */
+.contact--container {
+  padding-top: 1rem;
+}
+
+.contact--form,
+.contact--group {
+  display: grid;
+  row-gap: 1rem;
+}
+
+.contact--form {
+  position: relative;
+}
+
+.contact--input {
+  padding: 1rem 1.25rem;
+  border-radius: 0.5rem;
+  background-color: var(--container-color);
+  color: var(--title-color);
+}
+
+.contact--input::placeholder {
+  color: var(--text-color);
+}
+
+.contact--form textarea {
+  height: 11rem;
+  resize: none;
+}
+
+.contact--button {
+  justify-self: center;
+  cursor: pointer;
+}
+
+.contact--message {
+  position: absolute;
+  left: 0;
+  bottom: 4.5rem;
+  font-size: var(--small-font-size);
+  color: var(--title-color);
+}
 /* Footer*/
 
 /* Scroll bar */

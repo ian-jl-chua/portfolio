@@ -20,11 +20,11 @@ if (navClose) {
 
 const navLink = document.querySelectorAll('.nav--link')
 
-const action = ()=>{
+const action = () => {
   const navMenu = document.getElementById('nav-menu')
   navMenu.classList.remove('show-menu')
 }
-navLink.forEach((el)=> el.addEventListener('click', action))
+navLink.forEach((el) => el.addEventListener('click', action))
 
 // Header //
 const blurHeader = () => {
@@ -37,37 +37,31 @@ const blurHeader = () => {
 
 window.addEventListener('scroll', blurHeader)
 
-// Nav Icon //
+// Email //
+const contactForm = document.getElementById('contact-form'),
+  contactMessage = document.getElementById('contact-message')
 
-// Section //
-// let sections = document.querySelectorAll('section')
-// let navLink = document.querySelectorAll('header nav a')
+const sendEmail = async (event) => {
+  event.preventDefault()
 
-// window.onscroll = () => {
-//   sections.forEach((sec) => {
-//     let top = window.scrollY
-//     let offset = sec.offsetTop - 100
-//     let height = sec.offsetHeight
-//     let id = sec.getAttribute('id')
+  try {
+    await emailjs.sendForm(
+      'serviceID',
+      'templateID',
+      '#contact-form',
+      'publicKey'
+    )
 
-//     if (top >= offset && top < offset + height) {
-//       // active navbar links
-//       navLink.forEach((links) => {
-//         links.classList.remove('active')
-//         document
-//           .querySelector('header nav a[href*=' + id + ']')
-//           .classList.add('active')
-//       })
-//     }
-//   })
-// }
+    contactMessage.textContent = 'Message sent successfully ✅'
 
-// EMAIL //
-// const contactForm = document.getElementById('contact-form'),
-// contactMessage = document.getElementById('contact-message')
+    setTimeout(() => {
+      contactMessage.textContent = ''
+    }, 5000)
 
-// const sendEmail = (event)=>{
-//   event.preventDefault()
-// }
+    contactForm.reset()
+  } catch (error) {
+    contactMessage.textContent = 'Message not sent (service error) ❌'
+  }
+}
 
-// contactForm.addEventListener('submit', sendEmail)
+contactForm.addEventListener('submit', sendEmail)

@@ -1,4 +1,4 @@
-/* html {
+html {
   background: url(https://ian-jl-chua.github.io/assets/foggy-mountains-nature-fog.jpg)
     no-repeat center fixed;
   background-size: cover;
@@ -15,7 +15,7 @@
   border-width: 5px 5px 5px;
   margin: 15px;
   font-size: 30px;
-} 
+}
 
 .midSec {
   background-color: rgb(0, 0, 0, 0.7);
@@ -40,7 +40,7 @@
   gap: 1rem;
   grid-template-columns: repeat(2, 1fr);
   align-content: center;
-} 
+}
 
 .grid_1_odd {
   border-style: solid;
@@ -65,10 +65,9 @@
   gap: 1rem;
   grid-template-columns: repeat(2, 1fr);
 }
- */
 
- /* needs editing */
-/* .img_in_grid {
+/* needs editing */
+.img_in_grid {
   max-width: 400px;
 }
 
@@ -97,7 +96,7 @@ a:not(.active) {
   color: whitesmoke;
 }
 
- a.active {
+a.active {
   background-color: rgb(245, 245, 245, 0.8);
   color: rgb(22, 56, 22);
-} */
+}
