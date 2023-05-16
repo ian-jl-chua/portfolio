@@ -1,5 +1,4 @@
 // Menu //
-
 const navMenu = document.getElementById('nav-menu')
 const navBurger = document.getElementById('nav-burger')
 const navClose = document.getElementById('nav-close')
@@ -16,8 +15,8 @@ if (navClose) {
   })
 }
 
-// Menu mobile //
 
+// Menu mobile //
 const navLink = document.querySelectorAll('.nav--link')
 
 const action = () => {
@@ -34,8 +33,8 @@ const blurHeader = () => {
     ? header.classList.add('blur-header')
     : header.classList.remove('blur-header')
 }
-
 window.addEventListener('scroll', blurHeader)
+
 
 // Email //
 const contactForm = document.getElementById('contact-form'),
@@ -45,6 +44,7 @@ const sendEmail = async (event) => {
   event.preventDefault()
 
   try {
+    // you need to provide serviceID, templateID and publicKey in order for this function to work
     await emailjs.sendForm(
       'serviceID',
       'templateID',
@@ -63,5 +63,36 @@ const sendEmail = async (event) => {
     contactMessage.textContent = 'Message not sent (service error) ❌'
   }
 }
-
 contactForm.addEventListener('submit', sendEmail)
+
+
+// Scroll up //
+const scrollUp = ()=>{
+  const scrollUp = document.getElementById('scroll-up')
+  // if scroll is higher than 350 view port height
+  this.scrollY >=350 ? scrollUp.classList.add('show-scroll'): scrollUp.classList.remove('show-scroll')
+}
+window.addEventListener('scroll', scrollUp)
+
+
+// Active link //
+const sections = document.querySelectorAll('section[id]')
+
+const scrollActive = ()=>{
+  const scrollY= window.pageYOffset
+
+  sections.forEach((sec)=>{
+    const sectionHeight = sec.offsetHeight,
+            sectionTop = sec.offsetTop -58,
+            sectionID = sec.getAttribute('id'),
+            sectionClass= document.querySelector('.nav--menu a[href*=' + sectionID + ']')
+
+            if(scrollY> sectionTop && scrollY <= sectionTop + sectionHeight){
+              sectionClass.classList.add('active-link')
+            }else{
+              sectionClass.classList.remove('active-link')
+            }
+  })
+}
+
+window.addEventListener('scroll', scrollActive)

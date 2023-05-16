@@ -188,6 +188,7 @@ svg {
   color: var(--title-color);
   cursor: pointer;
 }
+
 /* Media query for mobile */
 @media screen and (max-width: 1023px) {
   .nav--menu {
@@ -247,7 +248,7 @@ svg {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: hsla(0, 0%, 10%, 0.3);
+  background-color: hsla(0, 78%, 20%, 0.3);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
   top: 0;
@@ -256,6 +257,9 @@ svg {
 }
 
 /* Active link */
+.active-link {
+  color: var(--first-color);
+}
 
 /* Home */
 .home {
@@ -564,10 +568,99 @@ svg {
   color: var(--title-color);
 }
 /* Footer*/
+.footer {
+  padding: 3.5rem 2rem;
+}
 
+.footer--container {
+  row-gap: 2rem;
+  text-align: center;
+}
+
+.footer--title {
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-semi-bold);
+  margin-bottom: 0.25rem;
+}
+
+.footer--title span {
+  color: var(--first-color);
+}
+
+.footer--position {
+  font-size: var(--normal-font-size);
+}
+
+.footer--sci {
+  display: flex;
+  justify-content: center;
+  column-gap: 1.25rem;
+}
+
+.footer--sci a {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 0.2rem solid var(--border-color);
+  border-radius: 40%;
+  font-size: 35px;
+  color: var(--text-color);
+  z-index: 1;
+  overflow: hidden;
+}
+
+.footer--sci a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-color);
+  z-index: -1;
+  transition: 1s;
+}
+
+.footer--sci a:hover::before {
+  width: 100%;
+  background-color: var(--first-color);
+}
+
+.footer--copy {
+  font-size: var(--smaller-font-size);
+  margin-top: 2rem;
+}
 /* Scroll bar */
+::-webkit-scrollbar {
+  width: 6rem;
+  border-radius: 0.5rem;
+}
+/* To top */
+.scrollup {
+  position: fixed;
+  right: 1rem;
+  bottom: -50%;
+  background-color: var(--first-color);
+  padding: 10px;
+  border-radius: 40px;
+  display: inline-flex;
+  color: var(--text-color);
+  font-size: 1.25rem;
+  z-index: var(--z-tooltip);
+  transition: bottom 1s, transform 1s;
+}
 
-/* Scroll up */
+.scrollup:hover {
+  transform: translateY(-0.25rem);
+}
+
+.show-scroll {
+  bottom: 3rem;
+}
 
 /* Breakpoints */
 /* For small devices */
