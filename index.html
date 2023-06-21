@@ -50,7 +50,7 @@
             <div class="home--info">
               <h1 class="home--title">Kia ora,</h1>
               <h1 class="home--title">my name is <span>Ian</span></h1>
-              <h3 class="home--position">I am a Full Stack Developer</h3>
+              <h2 class="home--position">I am a Full Stack Developer</h2>
               <p class="home--para">
                 This is my portfolio to showcase some projects that I have been
                 working on during my time at Dev Academy.
@@ -63,12 +63,14 @@
                 href="https://github.com/ian-jl-chua"
                 target="_blank"
                 class="home--sci-link"
+                aria-label="link to github"
                 ><i class="ri-github-fill"></i
               ></a>
               <a
                 href="https://www.linkedin.com/in/ian-jl-chua/"
                 target="_blank"
                 class="home--sci-link"
+                aria-label="link to linkedin"
                 ><i class="ri-linkedin-box-fill"></i
               ></a>
             </div>
@@ -148,7 +150,7 @@
             <article class="projects--card">
               <img
                 src="./assets/sims-icon.png"
-                alt="Sim's project image"
+                alt="project image 1"
                 class="projects--img"
               />
               <div class="projects--modal">
@@ -199,7 +201,7 @@
             <article class="projects--card">
               <img
                 src="./assets/to-do-icon.png"
-                alt="To-do image"
+                alt="project image 2"
                 class="projects--img"
               />
               <div class="projects--modal">
@@ -262,6 +264,7 @@
                 required
                 placeholder="Your name"
                 class="contact--input"
+                aria-label="persons-name"
               />
               <input
                 type="email"
@@ -269,6 +272,7 @@
                 required
                 placeholder="Your email"
                 class="contact--input"
+                aria-label="persons-email"
               />
             </div>
             <textarea
@@ -276,6 +280,7 @@
               required
               placeholder="Your message"
               class="contact--input"
+              aria-label="persons-message"
             ></textarea>
             <p class="contact--message" id="contact-message"></p>
             <button type="submit" class="button contact--button">
@@ -298,12 +303,14 @@
             href="https://github.com/ian-jl-chua"
             target="_blank"
             class="footer--sci-link"
+            aria-label="link to github"
             ><i class="ri-github-fill"></i
           ></a>
           <a
             href="https://www.linkedin.com/in/ian-jl-chua/"
             target="_blank"
             class="footer--sci-link"
+            aria-label="link to linkedin"
             ><i class="ri-linkedin-box-fill"></i
           ></a>
         </div>
@@ -314,7 +321,7 @@
     </footer>
 
     <!-- To top -->
-    <a href="#" class="scrollup" id="scroll-up"
+    <a href="#" class="scrollup" id="scroll-up" aria-label="scroll up"
       ><i class="ri-arrow-up-s-line"></i
     ></a>
     <!-- Main JS -->

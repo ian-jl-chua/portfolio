@@ -4,16 +4,6 @@
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3.5rem;
-
-  /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
-  /* 
-      Change favorite color
-      Default: hsl(162, 100%, 40%)
-      Orange: hsl(14, 100%, 65%) - Blue: hsl(210, 100%, 70%)
-      Pink: hsl(356, 100%, 75%) - Purple: hsl(250, 100%, 75%)l
-  */
-
   --hue: 0;
   --first-color: hsl(var(--hue), 80%, 30%);
   --first-color-alt: hsl(var(--hue), 56%, 35%);
@@ -517,9 +507,9 @@ svg {
   flex-direction: column;
 }
 
-.project-inner-item {
-  /* Styles for the project-inner-item elements */
-}
+/* .project-inner-item {
+} */
+/* ^ Styles for the project-inner-item elements */
 
 .projects--card:hover .projects--modal {
   left: 0;
@@ -825,25 +815,25 @@ svg {
   .contact--form textarea {
     height: 15rem;
   }
-  .footer{
+  .footer {
     padding-block: 4.5rem 4rem;
   }
-  .footer--container{
-    grid-template-columns: repeat(3,1fr);
+  .footer--container {
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
     text-align: initial;
   }
-  .footer--title{
+  .footer--title {
     font-size: var(--font-medium);
   }
-  .footer--sci{
-column-gap: 1.5rem;
+  .footer--sci {
+    column-gap: 1.5rem;
   }
-  .footer--copy{
+  .footer--copy {
     margin: 0;
     justify-self: flex-end;
   }
-  .scrollup{
+  .scrollup {
     right: 3rem;
   }
 }
