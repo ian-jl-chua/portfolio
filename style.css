@@ -679,6 +679,9 @@ svg {
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   }
   /* to be amended */
+  .projects--img {
+    max-height: 100%;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -712,6 +715,9 @@ svg {
   /* .projects--container {
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   } */
+  .projects--img {
+    height: 275px;
+  }
 }
 
 /* For large devices */
@@ -798,6 +804,10 @@ svg {
   .projects--button {
     font-size: var(--normal-font-size);
   }
+  .projects--img {
+    height: 428px;
+  }
+  /* ^ change ".projects--img" if necessary for the LARGE screens */
   .contact--container {
     grid-template-columns: 680px;
     padding-block: 2.5rem 2rem;
