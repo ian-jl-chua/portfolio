@@ -635,11 +635,18 @@ svg {
   font-size: var(--smaller-font-size);
   margin-top: 2rem;
 }
+
 /* Scroll bar */
 ::-webkit-scrollbar {
-  width: 6rem;
-  border-radius: 0.5rem;
+  width: 0.5rem;
+  background-color: hsla(0, 48%, 32%, 0.2);
 }
+::-webkit-scrollbar-thumb {
+  width: 0.5rem;
+  border-radius: 0.2rem;
+  background-color: hsla(0, 48%, 32%, 0.8);
+}
+
 /* To top */
 .scrollup {
   position: fixed;
