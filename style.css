@@ -95,6 +95,10 @@ h4 {
   font-weight: var(--font-medium);
 }
 
+p {
+  line-height: 1.5;
+}
+
 ul {
   list-style: none;
 }
@@ -111,7 +115,7 @@ svg {
 
 /* Reuseable CSS */
 .container {
-  max-width: 1120px;
+  /* max-width: 1120px; */
   margin-inline: 1.5rem;
 }
 
@@ -194,12 +198,6 @@ svg {
     transition: right 1s;
   }
 }
-
-/* @media screen and (min-width: 770px) {
-  .projects--container {
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  }
-} */
 
 .nav--list {
   display: flex;
@@ -371,15 +369,20 @@ svg {
 .about--img {
   width: 20rem;
   height: 20rem;
-  border-radius: 50%;
   justify-self: center;
   align-items: center;
 }
 
 .about--img img {
-  width: 320px;
+  width: 100%;
   border-radius: 50%;
   border: 0.2rem solid var(--first-color);
+  padding: 0.5rem;
+  border-radius: 50%;
+  border-top: 0.2rem solid var(--first-color);
+  border-bottom: 0.2rem solid var(--first-color);
+  border-left: 0.2rem solid var(--second-bg-color);
+  border-right: 0.2rem solid var(--third-bg-color);
 }
 
 /* Skills */
@@ -518,13 +521,19 @@ svg {
   text-align: center;
 } */
 
+.project--inner h3 {
+  margin-bottom: 0.25rem;
+}
+.project--inner p {
+  margin-bottom: 0.5rem;
+}
 /* .project-inner-item {
   display: flex;
   flex-direction: row;
   padding: 1rem;
 } */
 /* ^ Styles for the project-inner-item elements */
-.tech-container {
+.tech--container {
   display: grid;
   grid-template-columns: repeat(5, auto);
 }
@@ -792,8 +801,11 @@ svg {
   .container {
     margin-inline: auto;
   }
+  .nav {
+    padding: 3rem;
+  }
   .home--container {
-    grid-template-columns: 455px 550px;
+    grid-template-columns: 540px 400px;
     column-gap: 7rem;
     padding-block: 2rem 3rem;
   }
@@ -805,6 +817,7 @@ svg {
   }
   .home--info {
     margin-block: 1.5rem 2rem;
+    padding: 0 1rem;
   }
   .home--sci {
     column-gap: 1.5rem;
@@ -835,7 +848,7 @@ svg {
     font-size: var(--h3-font-size);
   }
   .projects--container {
-    grid-template-columns: repeat(2, 550px);
+    grid-template-columns: repeat(2, 530px);
     /* change to bottom one when you have more than 2 projects */
     /* grid-template-columns: repeat(3,350px); */
     row-gap: 3rem;
@@ -845,11 +858,11 @@ svg {
     font-size: var(--normal-font-size);
   }
   .projects--img {
-    height: 428px;
+    height: 470px;
   }
   /* ^ change ".projects--img" if necessary for the LARGE screens */
   .contact--container {
-    grid-template-columns: 680px;
+    grid-template-columns: 880px;
     padding-block: 2.5rem 2rem;
   }
   .contact--form {
