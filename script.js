@@ -25,6 +25,7 @@ const action = () => {
 }
 navLink.forEach((el) => el.addEventListener('click', action))
 
+
 // Header //
 const blurHeader = () => {
   const header = document.getElementById('header')
@@ -96,3 +97,11 @@ const scrollActive = ()=>{
 }
 
 window.addEventListener('scroll', scrollActive)
+
+
+// Variable year //
+const year = document.getElementById('year')
+const thisYear = new Date().getFullYear()
+
+year.setAttribute('dateTime', thisYear)
+year.textContent = thisYear
