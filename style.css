@@ -5,11 +5,11 @@
 :root {
   --header-height: 3.5rem;
   --hue: 0;
-  --first-color: hsl(var(--hue), 80%, 30%);
-  --first-color-alt: hsl(var(--hue), 56%, 35%);
-  --title-color: hsl(0, 8%, 95%);
-  --text-color: whitesmoke;
-  --bg-color: #010000;
+  --first-color: hsl(var(--hue), 90%, 25%);
+  --first-color-alt: hsl(var(--hue), 72%, 42%);
+  --title-color: hsl(var(--hue), 35%, 80%);
+  --text-color: rgb(182, 156, 156);
+  --bg-color: #0e0000;
   --second-bg-color: linear-gradient(rgba(63, 1, 1, 0), rgb(100, 28, 31, 1));
   --third-bg-color: linear-gradient(rgb(100, 28, 31, 1), rgba(63, 1, 1, 0));
   --fourth-bg-color: linear-gradient(
@@ -146,7 +146,7 @@ svg {
 }
 
 .section--title span {
-  color: var(--first-color);
+  color: var(--first-color-alt);
 }
 
 .main {
@@ -272,7 +272,7 @@ svg {
 }
 
 .home--title span {
-  color: var(--first-color);
+  color: var(--first-color-alt);
 }
 
 .home--title {
@@ -612,7 +612,7 @@ svg {
 }
 
 .footer--title span {
-  color: var(--first-color);
+  color: var(--first-color-alt);
 }
 
 .footer--position {
