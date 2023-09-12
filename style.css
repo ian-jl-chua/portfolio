@@ -7,8 +7,8 @@
   --hue: 0;
   --first-color: hsl(var(--hue), 90%, 25%);
   --first-color-alt: hsl(var(--hue), 72%, 42%);
-  --title-color: hsl(var(--hue), 35%, 80%);
-  --text-color: rgb(182, 156, 156);
+  --title-color: hsl(var(--hue), 25%, 80%);
+  --text-color: rgb(212, 193, 193);
   --bg-color: #0e0000;
   --second-bg-color: linear-gradient(rgba(63, 1, 1, 0), rgb(100, 28, 31, 1));
   --third-bg-color: linear-gradient(rgb(100, 28, 31, 1), rgba(63, 1, 1, 0));
