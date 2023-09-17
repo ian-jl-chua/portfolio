@@ -17,6 +17,10 @@
     rgb(100, 28, 31, 1),
     rgba(63, 1, 1, 0)
   );
+  --glow1:rgba(206, 118, 104, 0.7);
+  --glow2:rgba(177, 80, 65, 0.88);
+  --glow3:rgba(113, 19, 5, 0.9);
+  --glow4:rgba(113, 19, 5, 1);
   --container-color: hsl(0, 80%, 6%);
   --border-color: rgb(57, 1, 1);
 
@@ -43,7 +47,7 @@
 }
 
 /*  Responsive typography  */
-@media screen and (min-width: 1152px) {
+@media screen and (min-width: 1920px) {
   :root {
     --biggest-font-size: 4rem;
     --bigger-font-size: 2rem;
@@ -272,8 +276,39 @@ svg {
 }
 
 .home--title span {
-  color: var(--first-color-alt);
+  animation: glow 5s infinite;
 }
+
+.home--title span:hover::before {
+  content: "<";
+}
+
+.home--title span:hover::after {
+  content: "/>";
+}
+
+@keyframes glow {
+  0% {
+    color: var(--glow1);
+  }
+  20% {
+    color: var(--glow2);
+  }
+  40% {
+    color: var(--glow3);
+  }
+  60% {
+    color: var(--glow4);
+  }
+  80% {
+    color: var(--glow3);
+  }
+  100% {
+    color: var(--glow2);
+  }
+}
+
+
 
 .home--title {
   font-size: var(--biggest-font-size);
